@@ -62,7 +62,7 @@ public class Door : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            if(state != DoorState.Opened)
+            if(state == DoorState.Closed)
             {
                 state = DoorState.Opening;
                 currentOpenSpeed = openSpeed;
